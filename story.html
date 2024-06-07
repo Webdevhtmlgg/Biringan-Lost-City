@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lost City</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 30px;
+        background-color: #f0f0f0;
+    }
+    h1 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    p {
+        font-size: 18px;
+        padding: 10px;
+        line-height: 1.6;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .image1 {
+        display: none;
+    }
+    .image2 {
+        display: none;
+    }
+    .image3 {
+        display: none;
+    }
+    .image4 {
+        display: none;
+    }
+    .image5 {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    .button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+    }
+</style>
+</head>
+<body>
+<h1>The Lost  City of Biringan</h1>
+<p>The Lost City of Biringan is a legendary and mythical place in the province of Samar, Philippines. According to local folklore and urban legends, Biringan City is a phantom city inhabited by supernatural beings known as Engkantos, which are enchanted beings and their descendants deeply rooted in the country's ancient animistic and religious cultures.
+ 
+The stories surrounding Biringan City tell that people who enter this mystical place disappear forever, never to return to the human world. The city is described as a hidden and magical realm, not visible to ordinary human eyes, where the Engkantos reside in beautiful palaces and fortresses reminiscent of mythical settings.
+ 
+For decades, the tales of Biringan City have been passed down through generations, captivating the imagination of locals and sparking intrigue and mystery among those who hear about it. The legends of Biringan City have become one of the most popular urban myths in the region, with various interpretations and versions of the story circulating among the people of Samar.
+ 
+Ultimately, the Lost City of Biringan remains a fascinating and enigmatic part of Filipino folklore, shrouded in mystery and wonder, as locals continue to share the stories of this phantom city and its mystical inhabitant.</p>
+<p>Sources:</p>
+<a href="https://www.esquiremag.ph/long-reads/features/creepy-legend-biringan-city-a00293-20191222?need_sec_link=1&sec_link_scene=im" target="_blank"> esquire Philippines</a>
+<a href="https://en.m.wikipedia.org/wiki/Biringan?need_sec_link=1&sec_link_scene=im" target="_blank">Wikipedia</a>
+
+
+
+<img class="image1 active" src="101.jpg" alt="Image 1" width=300" height="400">
+<img class="image2" src="102.jpg" alt="Image 2" width="300" height="400">
+<img class="image3" src="103.jpg" alt="Image 3" width=300" height="400">
+<img class="image4" src="104.jpg" alt="Image 4" width="300" height="400">
+<img class="image5" src="105.jpg" alt="Image 5" width="300" height="400">
+
+<button class="button" onclick="changeImage('image1')">Image 1</button>
+<button class="button" onclick="changeImage('image2')">Image 2</button>
+<button class="button" onclick="changeImage('image3')">Image 3</button>
+<button class="button" onclick="changeImage('image4')">Image 4</button>
+<button class="button" onclick="changeImage('image5')">Image 5</button>
+
+<script>
+    function changeImage(imageClass) {
+        const images = document.querySelectorAll('img');
+        images.forEach(image => {
+            if (image.classList.contains(imageClass)) {
+                image.classList.add('active');
+            } else {
+                image.classList.remove('active');
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
+
+
+    
